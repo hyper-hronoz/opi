@@ -36,6 +36,9 @@ int main() {
   double L = Vs / V;
   cout << "Уровень программы: " << L << endl;
 
+  double S = 1 / L;
+  cout << "Сложность программы: " << S << endl;
+
   double Lc = 2 * n2 / (n1 * N2);
   cout << "Уровень качества программирования: " << Lc << endl;
 
@@ -47,6 +50,8 @@ int main() {
 
   double T = E/18;
   cout << "Приближенное время программирования: " << T << endl;
+
+  double Tc = ( n1 * N2 * (n1 * log(n1) / log(2) + n2*log(n2)/log(2)*n2) * log(n) / log(2)) / (2 * n2 * S);
   
   double la = pow(L, 2) * V;
   cout << "Уровень языка: " << T << endl;
